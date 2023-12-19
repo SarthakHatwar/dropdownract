@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background-color: #3498db;
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  color: #fff;
+  text-align: center;
+  margin-top: 40px;
+}
+h1:hover{
+  color: #000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dropdown-container {
+  text-align: center;
+  margin-top: 30%;
+  margin-left: 20%;
+}
+
+.dropdown-btn {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  color: #3498db;
+  font-weight: bold;
+  position: relative; 
+  width: 200px
+
+
+}
+
+.dropdown-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 200px;
+  background-color: #fff;
+  border: 1px solid #3498db;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: none;
+  position: absolute;
+  top: calc(100% + 5px); /* Position the dropdown right below the button */
+  left: 0;
+}
+
+.dropdown-list li {
+  padding: 10px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #ff0000;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-list li:hover {
+  background-color: #000;
+  color: #000;
 }
